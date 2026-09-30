@@ -1,0 +1,416 @@
+body {
+    background-color: #f5f5f5;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-header {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar,
+.container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #12355b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2878d4;
+}
+
+.nav-links,
+.nav-actions,
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2878d4;
+}
+
+.button,
+.cart-link {
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.button {
+    background-color: #2878d4;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button.secondary {
+    background-color: #12355b;
+}
+
+.cart-link {
+    border: 1px solid #cccccc;
+}
+
+.hero,
+.page-banner {
+    background-color: #fff1d6;
+    padding: 60px 0;
+}
+
+.hero-grid,
+.content-grid,
+.auth-layout,
+.cart-layout {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.eyebrow {
+    color: #df6d25;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #12355b;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+h2 {
+    color: #12355b;
+}
+
+.hero-copy p,
+.page-banner p,
+.content-copy p,
+.auth-intro p {
+    color: #666666;
+}
+
+.hero-art {
+    background-color: #dcecff;
+    min-height: 300px;
+    padding: 25px;
+}
+
+.book-stack {
+    margin: 70px auto 0;
+    max-width: 280px;
+}
+
+.book {
+    color: white;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.book.one { background-color: #e87b51; }
+.book.two { background-color: #2878d4; }
+.book.three { background-color: #238267; }
+
+.section {
+    padding: 55px 0;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    color: #666666;
+}
+
+.product-grid,
+.feature-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card,
+.form-card,
+.cart-items,
+.info-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 15px;
+}
+
+.product-card {
+    animation: card-appear 0.6s ease both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 18px #0000001a;
+    transform: translateY(-6px);
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.product-image {
+    background-color: #eef5ff;
+    height: 220px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.product-info p,
+.cart-item p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.price-row,
+.summary-row,
+.footer-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price,
+.cart-price {
+    color: #12355b;
+    font-weight: bold;
+}
+
+.small-button {
+    background-color: #dcecff;
+    color: #2878d4;
+    padding: 6px 9px;
+}
+
+.feature-strip {
+    background-color: #12355b;
+    color: white;
+    padding: 20px 0;
+}
+
+.feature-list {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-list strong,
+.feature-list span {
+    display: block;
+}
+
+.feature-list span {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.page-banner h1 {
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background-color: #dcecff;
+}
+
+.auth-page {
+    padding: 60px 0;
+}
+
+.auth-intro {
+    animation: slide-in-left 0.7s ease both;
+}
+
+.auth-layout {
+    max-width: 900px;
+}
+
+.form-card {
+    animation: slide-in-right 0.7s ease both;
+}
+
+.form-card input {
+    border: 1px solid #cccccc;
+    margin: 7px 0 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-card .button {
+    width: 100%;
+}
+
+.form-footer {
+    color: #666666;
+    text-align: center;
+}
+
+.form-footer a {
+    color: #2878d4;
+    font-weight: bold;
+}
+
+.cart-layout {
+    grid-template-columns: 2fr 1fr;
+}
+
+.cart-item {
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 80px 1fr auto;
+    padding: 15px;
+}
+
+.cart-item:last-child {
+    border-bottom: 0;
+}
+
+.cart-item img {
+    height: 90px;
+    object-fit: contain;
+    width: 70px;
+}
+
+.summary {
+    background-color: #12355b;
+    color: white;
+    padding: 20px;
+}
+
+.summary h2 {
+    color: white;
+}
+
+.summary-row {
+    border-bottom: 1px solid #55708e;
+    padding: 10px 0;
+}
+
+.summary .button {
+    background-color: #df6d25;
+    margin-top: 15px;
+    width: 100%;
+}
+
+@keyframes card-appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.site-footer {
+    background-color: white;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    padding: 20px 0;
+}
+
+@media (max-width: 700px) {
+    .navbar,
+    .nav-links,
+    .nav-actions,
+    .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero-grid,
+    .content-grid,
+    .auth-layout,
+    .cart-layout,
+    .product-grid,
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .auth-intro,
+    .form-card {
+        animation: none;
+        transition: none;
+    }
+}

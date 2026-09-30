@@ -1,0 +1,44 @@
+DataTypes:
+-> There datatypes that represents what type of data we are storing in the variable
+
+Types:
+
+1. Primitive
+
+i. number
+ii. string 
+iii. boolean
+iv. null
+v. undefine
+vi. bigint
+vii. symbol
+
+2. Non-primitive
+
+i. arrays
+    arrays are the linear datastructures used to store collection of homogenous or heterogenous data 
+    In js we can declear the arrays in two ways
+        1. literaly way
+            let arr = [1,2,2,3,4,4,5,6]
+            console.log(arr)
+
+        2. using new keyword
+            let arr = new array(1,2,3,4,54,65,7)
+            console.log(arr)
+    built in methods 
+    1. push
+    2. pop
+    3. unshift
+    4. shift
+    5. splice *****
+    6. slice
+
+
+ii. objects
+
+
+iii. functions
+iv. class types
+
+
+15 browswers and their respective js engine names
