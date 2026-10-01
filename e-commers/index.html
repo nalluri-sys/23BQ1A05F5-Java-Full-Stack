@@ -6,7 +6,7 @@
     <title>PrepShelf</title>
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-T8WRNCbMfn1VG8vs58NV5TMyD701wQ6b2Y_j5h_zg&s=10" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../e-commers/js/script.js">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -15,7 +15,7 @@
             <div class="nav-links">
                 <a class="active" href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="cart.html">Cart</a>
+                <a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a>
             </div>
             <div class="nav-actions">
                 <a class="cart-link" href="login.html">Log in</a>
@@ -54,6 +54,8 @@
             </div>
         </section>
 
+        <section class="section stats-section"><div class="container stats-grid"><div><strong>8</strong><span>Curated titles</span></div><div><strong>5</strong><span>Exam categories</span></div><div><strong>10%</strong><span>Prep10 welcome saving</span></div><div><strong>24h</strong><span>Fast dispatch promise</span></div></div></section>
+
         <section class="section" id="books">
             <div class="container">
                 <div class="section-heading">
@@ -61,40 +63,40 @@
                         <span class="eyebrow">The study shelf</span>
                         <h2>Popular this week</h2>
                     </div>
-                    <p>Strong foundations. Smarter revision.</p>
+                    <p>8 titles · Strong foundations. Smarter revision.</p>
                 </div>
                 <div class="product-grid">
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSVnfPNJ3TsCl5g_6IBJX2uPsszSO3ec3s-XIz3MT_8UH12xy7IQrUb7xkTemOmoDRa0ZlalUlJ6cuDw6tJr1sjcKeijJrtEhTXrKUHkag&usqp=CAc" alt="GATE preparation book">
-                        <div class="product-info"><h3>GATE 2025 Complete Guide</h3><p>Engineering concepts and practice sets</p><div class="price-row"><span class="price">₹599</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>GATE 2025 Complete Guide</h3><p>Engineering concepts and practice sets</p><div class="price-row"><span class="price">₹599</span><button class="small-button" type="button" data-add="gate">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTkiF9DTGC4UzkvuBq1Dy36CpQTR1eBSLmQnK2eGOGTUH6zCIVefgGCg2KriOX9rNdJRcuVu4nChi7_qYjdvf7CffWIxHQy307UnmlZVwPf&usqp=CAc" alt="Quantitative aptitude book">
-                        <div class="product-info"><h3>Quantitative Aptitude</h3><p>Fast methods for SSC and banking exams</p><div class="price-row"><span class="price">₹425</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>Quantitative Aptitude</h3><p>Fast methods for SSC and banking exams</p><div class="price-row"><span class="price">₹425</span><button class="small-button" type="button" data-add="aptitude">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZw4o9X2UTKpbnwh7qokq1e18pGst6EVEVLQc_8CU-Q&s=10" alt="General knowledge book">
-                        <div class="product-info"><h3>General Knowledge Manual</h3><p>Current affairs and static GK revision</p><div class="price-row"><span class="price">₹349</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>General Knowledge Manual</h3><p>Current affairs and static GK revision</p><div class="price-row"><span class="price">₹349</span><button class="small-button" type="button" data-add="gk">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqSofJttfhX-w1IVHXBVKCNn8ULo_2LGu_Uw0dx0sUg&s" alt="Government exam practice book">
-                        <div class="product-info"><h3>Government Exam Practice</h3><p>Previous papers with detailed solutions</p><div class="price-row"><span class="price">₹499</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>Government Exam Practice</h3><p>Previous papers with detailed solutions</p><div class="price-row"><span class="price">₹499</span><button class="small-button" type="button" data-add="practice">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSVnfPNJ3TsCl5g_6IBJX2uPsszSO3ec3s-XIz3MT_8UH12xy7IQrUb7xkTemOmoDRa0ZlalUlJ6cuDw6tJr1sjcKeijJrtEhTXrKUHkag&usqp=CAc" alt="UPSC study book">
-                        <div class="product-info"><h3>UPSC Civil Services Guide</h3><p>Core subjects and answer writing practice</p><div class="price-row"><span class="price">₹699</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>UPSC Civil Services Guide</h3><p>Core subjects and answer writing practice</p><div class="price-row"><span class="price">₹699</span><button class="small-button" type="button" data-add="upsc">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTkiF9DTGC4UzkvuBq1Dy36CpQTR1eBSLmQnK2eGOGTUH6zCIVefgGCg2KriOX9rNdJRcuVu4nChi7_qYjdvf7CffWIxHQy307UnmlZVwPf&usqp=CAc" alt="Reasoning practice book">
-                        <div class="product-info"><h3>Verbal and Non-Verbal Reasoning</h3><p>Practice questions for competitive exams</p><div class="price-row"><span class="price">₹399</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>Verbal and Non-Verbal Reasoning</h3><p>Practice questions for competitive exams</p><div class="price-row"><span class="price">₹399</span><button class="small-button" type="button" data-add="reasoning">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZw4o9X2UTKpbnwh7qokq1e18pGst6EVEVLQc_8CU-Q&s=10" alt="English exam book">
-                        <div class="product-info"><h3>Objective General English</h3><p>Grammar, vocabulary and exam exercises</p><div class="price-row"><span class="price">₹375</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>Objective General English</h3><p>Grammar, vocabulary and exam exercises</p><div class="price-row"><span class="price">₹375</span><button class="small-button" type="button" data-add="english">Add to cart</button></div></div>
                     </article>
                     <article class="product-card">
                         <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqSofJttfhX-w1IVHXBVKCNn8ULo_2LGu_Uw0dx0sUg&s" alt="Current affairs book">
-                        <div class="product-info"><h3>Current Affairs Yearbook</h3><p>Important events for government exams</p><div class="price-row"><span class="price">₹299</span><a class="small-button" href="cart.html">Add to cart</a></div></div>
+                        <div class="product-info"><h3>Current Affairs Yearbook</h3><p>Important events for government exams</p><div class="price-row"><span class="price">₹299</span><button class="small-button" type="button" data-add="current">Add to cart</button></div></div>
                     </article>
                 </div>
             </div>
