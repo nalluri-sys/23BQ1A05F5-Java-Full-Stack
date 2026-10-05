@@ -1,44 +1,200 @@
-DataTypes:
--> There datatypes that represents what type of data we are storing in the variable
+Front End(client ) : 
+--------------------
+    ->What are all the User Can on the Screen (user interface) is called as Front End 
 
-Types:
+Middle Layer(Server/backend): 
+-----------------------------
+    ->In Backend all the request and response handled by server ,Here Main business logic / validation to store data in Database 
 
-1. Primitive
+Database : 
+----------
+    ->Database is the place where we can store data for farther operations 
 
-i. number
-ii. string 
-iii. boolean
-iv. null
-v. undefine
-vi. bigint
-vii. symbol
+Web Applications : 
+-------------------
+    ->Any Applications that will be run in browsers is called as a Web Applications 
 
-2. Non-primitive
+    Types: 
+    ------  
+        1.Static Web Applications: 
+        --------------------------
+            ->Any Web Applications doesn't have functionalities is called as Static web Applications
+            ->To Build Static Pages we use only HTML and CSS 
 
-i. arrays
-    arrays are the linear datastructures used to store collection of homogenous or heterogenous data 
-    In js we can declear the arrays in two ways
-        1. literaly way
-            let arr = [1,2,2,3,4,4,5,6]
-            console.log(arr)
+        2.Dynamic Web Applications: 
+        --------------------------
+            ->Any Web Applications having functionalities is called as Dynamic web Applications
+            ->To Build Dynamic Pages we use HTML , CSS and JS 
 
-        2. using new keyword
-            let arr = new array(1,2,3,4,54,65,7)
-            console.log(arr)
-    built in methods 
-    1. push
-    2. pop
-    3. unshift
-    4. shift
-    5. splice *****
-    6. slice
+SGML : 
+------
 
+HTML : 
+------
+    ->HTML stands for Hyper Markup Language used to build the structure of the web Pages 
+    ->HTML introduced in the year 1191 by the developer "Tim bernerse lie"
+    ->HTML Contains Series of "ELEMENTS" 
+    ->present version of HTML is "HTML 5"
 
-ii. objects
-
-
-iii. functions
-iv. class types
+HTML boiler plate : 
+-------------------
 
 
-15 browswers and their respective js engine names
+
+ 25-09-2026
+ ===========
+
+ Tags: 
+ -----
+    ->Tags are pre-define  words which are enclosed with both opening and closing angular brackets 
+    Ex: 
+        <h1> , <meta> ,<title> , <p> , <figure> ,<li> ..etc 
+
+    Types: 
+        1. Paired tags 
+            ->Any tags having opening and closings tags 
+            Ex: 
+                i. all heading tags 
+                 Ex:   <h1>  </h1>
+                       <h2>  </h2>
+                       <h3>  </h3>
+                       <h4>  </h4>
+                       <h5>  </h5>
+                       <h6>  </h6>
+
+                ii. formatting tags : 
+                    Ex: 
+                        <i> </i>            ->italic
+                        <em></em>           ->italic
+                        <b></b>             ->bold
+                        <strong></strong>   ->bold
+                        <u></u>             ->underline
+                        <strike></strike>   ->to strike text 
+                        <sub></sub>         -> SubScript
+                        <sup></sup>         -> Super Script
+                        <mark></mark>       ->to Light text 
+                        <center></center>   ->content at center 
+                        <marquee></marquee> ->to scroll in different direction
+
+
+                
+
+
+    2. Unpaired tags/self closing tags 
+    ->Any Tags having only opening tags 
+            Ex: 
+            <br> , <hr>, <img> , <col>, <input> ,<meta> ..etc 
+
+
+Attribute : 
+-----------
+    ->Attribute are the additional information given to the tags 
+    ->Attributes are always in opening 
+
+    Ex: 
+        <h1 align="center" id="heading"> </h1> 
+         or 
+        <img src="" alt="" height="" width="">
+
+
+HTML Elements : 
+----------- 
+    ->opening , closing tag and the content together is called HTML Elements 
+
+    Ex: <h1> Heading </h1>
+        <p> ---------- </p>
+
+
+Form tags : 
+-----------
+    <form></form>
+    <fieldset></fieldset>
+    <legend></legend>     
+    <label> </label>    
+    <input> 
+    <textarea> </textarea>  
+    <button></button>  
+    <select></select>
+
+
+
+
+JOB APPLICATION FORM : 
+----------------------
+    1. First Name 
+    2. Last Name 
+    3. Email
+    4. Phone
+    5. Gender
+    6. College Name 
+    8. State   -> 5 states 
+    7. Address 
+    9. Skills  ->java spring boot , API Integration , Postmen , SQL , MYSQL , React 
+    10. Language -> English , Telugu , Kannada , Hindi 
+    11. Resume  
+
+
+       
+
+https://github.com/ashokm0603/VVIT-Java-Full-Stack-CSE-C.git
+
+
+Where we use JS : 
+------------------
+    ->We can build dynamic web applications 
+    ->using JS we can Add functionalities to Web Pages 
+    ->here Can achieve DOM(document object model) functionalities using that we can manipulate HTML and CSS 
+    ->to Fetch data from server (API's) and send data to server(API's)
+    ->We can build Server (using node )
+
+
+Tokens : 
+-------
+    ->Tokens are the smallest units js code 
+        types: 
+            1. identifiers 
+                ->
+            2. keywords 
+                ->
+            3. literals 
+                ->
+            4. operators 
+            5. separators 
+            6. comments 
+
+
+
+    
+DataTypes: 
+-----------
+    ->DataTypes represent the What type of Data we are storing on that variables 
+
+    Types: 
+        1. Primitive DataTypes 
+            i. number 
+            ii. string 
+            iii .boolean
+            iv . null 
+            v.  undefine 
+            vi.  bigint 
+            vii. symbol
+
+
+        2. Non Primitive DataTypes
+            i. Arrays
+                ->Arrays are the linear data structures used to store collection of homogenous or heterogenous data 
+
+                ->In JS we can declear arrays in Two Ways 
+                    1. Literal way 
+                    2. using new keyword(constructor)
+
+
+
+            ii. Objects 
+                ->Object the real time entities used to store data in form of key and value pair
+                ->In JS we can declear Object in Two Ways 
+                    1. Literal way 
+                    2. using new keyword(constructor)
+
+            iii .Functions 
+            v. Class types 
