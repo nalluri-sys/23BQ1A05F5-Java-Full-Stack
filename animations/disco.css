@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disco 1s linear 2s infinite normal
+}
+h2{
+    background-color: red;
+}
+@keyframes disco {
+    0%{
+        background-color: red;
+    }
+    15%{
+        background-color: pink;
+    }
+    30%{
+        background-color: green;
+    }
+    45%{
+        background-color: blueviolet;
+    }
+    60%{
+        background-color: brown;
+    }
+    75%{
+        background-color: yellow;
+    }
+
+}
